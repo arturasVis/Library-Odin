@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="window">
+        <div class="header">
+            <h1>Library</h1>
+        </div>
+        <div class="content">
+        </div>
+    </div>
+    <button class="open-button" onclick="openForm()">Add Book</button>
+    <div class="popup">
+        <form action="" class="form-container">
+            <h1>New Book</h1>
+            <label for="title">TITLE</label>
+            <input type="text" placeholder="Enter Title" name="title" id="title" required>
+            <label for="author">AUTHOR</label>
+            <input type="text" placeholder="Enter Author" name="author" id="author" required>
+            <label for="pages">PAGES</label>
+            <input type="number" placeholder="Enter numbe of pages" name="pages" id="pages" required>
+            <label for="read">Has Been read?</label>
+            <span><input type="checkbox" placeholder="Enter Title" name="read" id="read"></span>
+            <button type="submit" class="btn">Add Book</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+</body>
+</html>
