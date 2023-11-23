@@ -1,10 +1,14 @@
 let myLibrary=[];
 const contetScreen=document.querySelector(".content")
-function Book(title,author,pages,read){
-    this.author=author
-    this.title=title
-    this.pages=pages
-    this.read=read
+class Book{
+    constructor(title,author,pages,read)
+    {
+        this.author=author
+        this.title=title
+        this.pages=pages
+        this.read=read
+    }
+    
 }
 
 
